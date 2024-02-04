@@ -377,18 +377,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">qiskit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">qiskit.visualization</span> <span class="kn">import</span> <span class="n">plot_histogram</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named 'qiskit'
-</pre></div>
-</div>
-</div>
 </div>
 <h2 style="font-size:24px;">Classical logic gates with quantum circuits</h2>
 <br/>
@@ -462,21 +450,118 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NOT with input 0 gives output 1
-</pre></div>
-</div>
-<div class="output text_html"><pre style='word-wrap: normal;white-space: pre;background: #fff0;line-height: 1.1;font-family: "Courier New",Courier,monospace'>           ░ ┌───┐ ░ ┌─┐
-  q: ─|0&gt;──░─┤ X ├─░─┤M├
-           ░ └───┘ ░ └╥┘
-c: 1/═════════════════╩═
-                      0 </pre></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NOT with input 1 gives output 0
-</pre></div>
-</div>
-<div class="output text_html"><pre style='word-wrap: normal;white-space: pre;background: #fff0;line-height: 1.1;font-family: "Courier New",Courier,monospace'>          ┌───┐ ░ ┌───┐ ░ ┌─┐
-  q: ─|0&gt;─┤ X ├─░─┤ X ├─░─┤M├
-          └───┘ ░ └───┘ ░ └╥┘
-c: 1/══════════════════════╩═
-                           0 </pre></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">MissingOptionalLibraryError</span><span class="g g-Whitespace">               </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1">## Test the function</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="k">for</span> <span class="n">inp</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'0'</span><span class="p">,</span> <span class="s1">'1'</span><span class="p">]:</span>
+<span class="ne">----&gt; </span><span class="mi">3</span>     <span class="n">qc</span><span class="p">,</span> <span class="n">out</span> <span class="o">=</span> <span class="n">NOT</span><span class="p">(</span><span class="n">inp</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="nb">print</span><span class="p">(</span><span class="s1">'NOT with input'</span><span class="p">,</span><span class="n">inp</span><span class="p">,</span><span class="s1">'gives output'</span><span class="p">,</span><span class="n">out</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">display</span><span class="p">(</span><span class="n">qc</span><span class="o">.</span><span class="n">draw</span><span class="p">())</span>
+
+<span class="nn">Cell In[2], line 32,</span> in <span class="ni">NOT</span><span class="nt">(inp)</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span> <span class="c1"># Finally, we extract the |0⟩/|1⟩ output of the qubit and encode it in the bit c[0]</span>
+<span class="g g-Whitespace">     </span><span class="mi">31</span> <span class="n">qc</span><span class="o">.</span><span class="n">measure</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">32</span> <span class="n">qc</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="s1">'mpl'</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">34</span> <span class="c1"># We'll run the program on a simulator</span>
+<span class="g g-Whitespace">     </span><span class="mi">35</span> <span class="n">backend</span> <span class="o">=</span> <span class="n">Aer</span><span class="o">.</span><span class="n">get_backend</span><span class="p">(</span><span class="s1">'aer_simulator'</span><span class="p">)</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/qiskit/circuit/quantumcircuit.py:1818,</span> in <span class="ni">QuantumCircuit.draw</span><span class="nt">(self, output, scale, filename, style, interactive, plot_barriers, reverse_bits, justify, vertical_compression, idle_wires, with_layout, fold, ax, initial_state, cregbundle, wire_order, expr_len)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1815</span> <span class="c1"># pylint: disable=cyclic-import</span>
+<span class="g g-Whitespace">   </span><span class="mi">1816</span> <span class="kn">from</span> <span class="nn">qiskit.visualization</span> <span class="kn">import</span> <span class="n">circuit_drawer</span>
+<span class="ne">-&gt; </span><span class="mi">1818</span> <span class="k">return</span> <span class="n">circuit_drawer</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1819</span>     <span class="bp">self</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1820</span>     <span class="n">scale</span><span class="o">=</span><span class="n">scale</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1821</span>     <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1822</span>     <span class="n">style</span><span class="o">=</span><span class="n">style</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1823</span>     <span class="n">output</span><span class="o">=</span><span class="n">output</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1824</span>     <span class="n">interactive</span><span class="o">=</span><span class="n">interactive</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1825</span>     <span class="n">plot_barriers</span><span class="o">=</span><span class="n">plot_barriers</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1826</span>     <span class="n">reverse_bits</span><span class="o">=</span><span class="n">reverse_bits</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1827</span>     <span class="n">justify</span><span class="o">=</span><span class="n">justify</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1828</span>     <span class="n">vertical_compression</span><span class="o">=</span><span class="n">vertical_compression</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1829</span>     <span class="n">idle_wires</span><span class="o">=</span><span class="n">idle_wires</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1830</span>     <span class="n">with_layout</span><span class="o">=</span><span class="n">with_layout</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1831</span>     <span class="n">fold</span><span class="o">=</span><span class="n">fold</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1832</span>     <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1833</span>     <span class="n">initial_state</span><span class="o">=</span><span class="n">initial_state</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1834</span>     <span class="n">cregbundle</span><span class="o">=</span><span class="n">cregbundle</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1835</span>     <span class="n">wire_order</span><span class="o">=</span><span class="n">wire_order</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1836</span>     <span class="n">expr_len</span><span class="o">=</span><span class="n">expr_len</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1837</span> <span class="p">)</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/qiskit/visualization/circuit/circuit_visualization.py:321,</span> in <span class="ni">circuit_drawer</span><span class="nt">(circuit, scale, filename, style, output, interactive, plot_barriers, reverse_bits, justify, vertical_compression, idle_wires, with_layout, fold, ax, initial_state, cregbundle, wire_order, expr_len)</span>
+<span class="g g-Whitespace">    </span><span class="mi">306</span>     <span class="k">return</span> <span class="n">_generate_latex_source</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">307</span>         <span class="n">circuit</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">308</span>         <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">318</span>         <span class="n">wire_order</span><span class="o">=</span><span class="n">complete_wire_order</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">319</span>     <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">320</span> <span class="k">elif</span> <span class="n">output</span> <span class="o">==</span> <span class="s2">"mpl"</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">321</span>     <span class="n">image</span> <span class="o">=</span> <span class="n">_matplotlib_circuit_drawer</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">322</span>         <span class="n">circuit</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">323</span>         <span class="n">scale</span><span class="o">=</span><span class="n">scale</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">324</span>         <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">325</span>         <span class="n">style</span><span class="o">=</span><span class="n">style</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">326</span>         <span class="n">plot_barriers</span><span class="o">=</span><span class="n">plot_barriers</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">327</span>         <span class="n">reverse_bits</span><span class="o">=</span><span class="n">reverse_bits</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">328</span>         <span class="n">justify</span><span class="o">=</span><span class="n">justify</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">329</span>         <span class="n">idle_wires</span><span class="o">=</span><span class="n">idle_wires</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">330</span>         <span class="n">with_layout</span><span class="o">=</span><span class="n">with_layout</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">331</span>         <span class="n">fold</span><span class="o">=</span><span class="n">fold</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">332</span>         <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">333</span>         <span class="n">initial_state</span><span class="o">=</span><span class="n">initial_state</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">334</span>         <span class="n">cregbundle</span><span class="o">=</span><span class="n">cregbundle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">335</span>         <span class="n">wire_order</span><span class="o">=</span><span class="n">complete_wire_order</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">336</span>         <span class="n">expr_len</span><span class="o">=</span><span class="n">expr_len</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">337</span>     <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">338</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">339</span>     <span class="k">raise</span> <span class="n">VisualizationError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">340</span>         <span class="s2">"Invalid output type </span><span class="si">%s</span><span class="s2"> selected. The only valid choices "</span>
+<span class="g g-Whitespace">    </span><span class="mi">341</span>         <span class="s2">"are text, latex, latex_source, and mpl"</span> <span class="o">%</span> <span class="n">output</span>
+<span class="g g-Whitespace">    </span><span class="mi">342</span>     <span class="p">)</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/qiskit/visualization/circuit/circuit_visualization.py:701,</span> in <span class="ni">_matplotlib_circuit_drawer</span><span class="nt">(circuit, scale, filename, style, plot_barriers, reverse_bits, justify, idle_wires, with_layout, fold, ax, initial_state, cregbundle, wire_order, expr_len)</span>
+<span class="g g-Whitespace">    </span><span class="mi">698</span> <span class="k">if</span> <span class="n">fold</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">699</span>     <span class="n">fold</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="ne">--&gt; </span><span class="mi">701</span> <span class="n">qcd</span> <span class="o">=</span> <span class="n">_matplotlib</span><span class="o">.</span><span class="n">MatplotlibDrawer</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">702</span>     <span class="n">qubits</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">703</span>     <span class="n">clbits</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">704</span>     <span class="n">nodes</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">705</span>     <span class="n">circuit</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">706</span>     <span class="n">scale</span><span class="o">=</span><span class="n">scale</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">707</span>     <span class="n">style</span><span class="o">=</span><span class="n">style</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">708</span>     <span class="n">reverse_bits</span><span class="o">=</span><span class="n">reverse_bits</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">709</span>     <span class="n">plot_barriers</span><span class="o">=</span><span class="n">plot_barriers</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">710</span>     <span class="n">fold</span><span class="o">=</span><span class="n">fold</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">711</span>     <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">712</span>     <span class="n">initial_state</span><span class="o">=</span><span class="n">initial_state</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">713</span>     <span class="n">cregbundle</span><span class="o">=</span><span class="n">cregbundle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">714</span>     <span class="n">with_layout</span><span class="o">=</span><span class="n">with_layout</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">715</span>     <span class="n">expr_len</span><span class="o">=</span><span class="n">expr_len</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">716</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">717</span> <span class="k">return</span> <span class="n">qcd</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/qiskit/utils/classtools.py:111,</span> in <span class="ni">_WrappedMethod.__get__.&lt;locals&gt;.out</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">108</span> <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">method</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">109</span> <span class="k">def</span> <span class="nf">out</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">110</span>     <span class="k">for</span> <span class="n">callback</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_before</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">111</span>         <span class="n">callback</span><span class="o">.</span><span class="fm">__get__</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">objtype</span><span class="p">)(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="n">retval</span> <span class="o">=</span> <span class="n">method</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">113</span>     <span class="k">for</span> <span class="n">callback</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_after</span><span class="p">:</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/qiskit/utils/lazy_tester.py:39,</span> in <span class="ni">_RequireNow.__call__</span><span class="nt">(self, *_args, **_kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">38</span> <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">_args</span><span class="p">,</span> <span class="o">**</span><span class="n">_kwargs</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">39</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_tester</span><span class="o">.</span><span class="n">require_now</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_feature</span><span class="p">)</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/qiskit/utils/lazy_tester.py:223,</span> in <span class="ni">LazyDependencyManager.require_now</span><span class="nt">(self, feature)</span>
+<span class="g g-Whitespace">    </span><span class="mi">221</span> <span class="k">if</span> <span class="bp">self</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">222</span>     <span class="k">return</span>
+<span class="ne">--&gt; </span><span class="mi">223</span> <span class="k">raise</span> <span class="n">MissingOptionalLibraryError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">224</span>     <span class="n">libname</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">feature</span><span class="p">,</span> <span class="n">pip_install</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_install</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_msg</span>
+<span class="g g-Whitespace">    </span><span class="mi">225</span> <span class="p">)</span>
+
+<span class="ne">MissingOptionalLibraryError</span>: "The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'."
 </pre></div>
 </div>
 </div>
