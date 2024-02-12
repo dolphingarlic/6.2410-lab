@@ -196,8 +196,6 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">T1:3E2 -- Quantum Simulation Lab</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="simulation-modules/T1-3E3-Activity-Cavity_QED_sensor.html">Activity 1: Solid State Spis – Cavity QED Digital Twin</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="simulation-modules/T1-3E3-Activity-Compuational_HOM.html">Activity 2 – Two-photon (HOM) interference simulation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Final Projects</span></p>
@@ -544,7 +542,7 @@ document.write(`
 <p>For a rigorous solution of the output operators of a Mach-Zender interferometer, see <a class="reference internal" href="T3E1-EXTRAS--rigorous-solution-MZI.html"><span class="doc std std-doc">EXTRAS – Rigorous Solution of Mach-Zender Interferometer</span></a>.</p>
 <p>For an interseting discussion of how the vacuum state input contributes to photon fluctuations, and how these fluctuations can be reduced using squeezed light, see the discussion of homodyne detection with squeezed light in <a class="reference internal" href="T3E1-EXTRAS-interference-2-homodyne-detection.html"><span class="doc std std-doc">EXTRAS – Homodyne Detection</span></a></p>
 </div>
-<p>Taking each path <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span> indificually, we find that for path <span class="math notranslate nohighlight">\(b\)</span> the annihilation operator going  into the second beamsplitter, ignoring the annihilation operator of the empty port, can be written as</p>
+<p>Taking each path <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span> individually, we find that for path <span class="math notranslate nohighlight">\(b\)</span> the annihilation operator going  into the second beamsplitter, ignoring the annihilation operator of the empty port, can be written as</p>
 <div class="math notranslate nohighlight">
 \[\bhat = \alpha e^{i\phi_b} \ahat/\sqrt{2}\]</div>
 <p>Likewise</p>
@@ -620,7 +618,7 @@ document.write(`
 <p>Now we need to understand how such an entangled state interacts with a beamsplitter. For this we will keep track of the different creation/annihilation operators through the system.</p>
 <p>A beamsplitter has the following relationship between the input and output modes:</p>
 <div class="math notranslate nohighlight">
-\[\adagger_\tau \rightarrow \frac{\cdagger_\tau + \ddagger_\tau}{\sqrt{2}},\]</div>
+\[\ahat_\tau \rightarrow \frac{\chat_\tau + \dhat_\tau}{\sqrt{2}},\]</div>
 <p>and</p>
 <div class="math notranslate nohighlight">
 \[\bhat_0 \rightarrow \frac{\chat_0 - \dhat_0}{\sqrt{2}},\]</div>
@@ -629,9 +627,9 @@ document.write(`
 \[ 
 \ket{\psi_\text{out}} = \frac{1}{2}
 \bigg \lbrace 
-\chat_\tau \chat - \chat_\tau \dhat + 
-\dhat_\tau \chat - \dhat_\tau \dhat
-\bigg \rbrace
+\cdagger_\tau \cdagger_0 - \cdagger_\tau \ddagger_0 + 
+\ddagger_\tau \cdagger_0 - \ddagger_\tau \ddagger_0
+\bigg \rbrace \ket{0}
 \]</div>
 <p>Let’s start for the case of <span class="math notranslate nohighlight">\(\tau \neq 0\)</span>.  In this case we  have that</p>
 <div class="math notranslate nohighlight">
