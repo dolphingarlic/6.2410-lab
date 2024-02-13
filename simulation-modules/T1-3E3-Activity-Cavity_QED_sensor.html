@@ -1,177 +1,110 @@
 
-
 <!DOCTYPE html>
 
-
-<html lang="en" >
-
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Activity 1: Solid State Spis – Cavity QED Digital Twin &#8212; 6.2410 -- Laboratory for Quantum Information Science and Engineering</title>
-  
-  
-  
-  <script data-cfasync="false">
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>Activity 1: Solid State Spis – Cavity QED Digital Twin — 6.2410 -- Laboratory for Quantum Information Science and Engineering</title>
+<script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
-  
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
-
-  
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=927b94d3fcb96560df09" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=927b94d3fcb96560df09" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=927b94d3fcb96560df09"></script>
-
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+<!-- Loaded before other Sphinx assets -->
+<link href="../_static/styles/theme.css?digest=927b94d3fcb96560df09" rel="stylesheet"/>
+<link href="../_static/styles/bootstrap.css?digest=927b94d3fcb96560df09" rel="stylesheet"/>
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=927b94d3fcb96560df09" rel="stylesheet"/>
+<link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=927b94d3fcb96560df09" rel="stylesheet"/>
+<link as="font" crossorigin="" href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" rel="preload" type="font/woff2"/>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" rel="stylesheet" type="text/css"/>
+<link href="../_static/togglebutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/sphinx-thebe.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" rel="stylesheet" type="text/css"/>
+<!-- Pre-loaded scripts that we'll load fully later -->
+<link as="script" href="../_static/scripts/bootstrap.js?digest=927b94d3fcb96560df09" rel="preload"/>
+<link as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=927b94d3fcb96560df09" rel="preload"/>
+<script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=927b94d3fcb96560df09"></script>
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="../_static/togglebutton.js"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="../_static/design-tabs.js"></script>
+<script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"tex": {"macros": {"ket": ["\\left|{#1}\\right\\rangle", 1], "bra": ["\\left\\langle{#1}\\right|", 1], "braket": ["\\left\\langle{#1}\\middle|{#2}\\right\\rangle", 2], "adagger": ["\\hat{a}^{\\dagger}"], "ahat": ["\\hat{a}"], "bdagger": ["\\hat{b}^{\\dagger}"], "bhat": ["\\hat{b}"], "cdagger": ["\\hat{c}^{\\dagger}"], "chat": ["\\hat{c}"], "ddagger": ["\\hat{d}^{\\dagger}"], "dhat": ["\\hat{d}"], "edagger": ["\\hat{e}^{\\dagger}"], "ehat": ["\\hat{e}"], "fdagger": ["\\hat{f}^{\\dagger}"], "fhat": ["\\hat{f}"], "gdagger": ["\\hat{g}^{\\dagger}"], "ghat": ["\\hat{g}"], "hdagger": ["\\hat{h}^{\\dagger}"], "hhat": ["\\hat{h}"], "gtwo": ["g^{(2)}"], "H": ["\\ket{H}"], "V": ["\\ket{V}"], "D": ["\\ket{D}"], "AD": ["\\ket{AD}"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script type="application/vnd.jupyter.widget-state+json">{"state": {"d7fccd57ba054ca1ad991e1c968c59ce": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "73b2d5d5e5fd4bc88e8bcf747d237a34": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_f1c436e85c3e45ff9893e94ad4ed9276", "IPY_MODEL_137f5d712f3d431cb88a127deb9e5435", "IPY_MODEL_609e593420fa44199c9f4bf54b149928", "IPY_MODEL_39795defecf9451d8855130427d2b136", "IPY_MODEL_4f727269a9d44f76b9623ceee1251324", "IPY_MODEL_8d02a59698334a3f8d0bd4cb16129a89"], "layout": "IPY_MODEL_d7fccd57ba054ca1ad991e1c968c59ce", "tabbable": null, "tooltip": null}}, "10f00365b86c4104b6f6d0683e23ab6b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "51e09513a23a4298b7dfb87301c2bad1": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "f1c436e85c3e45ff9893e94ad4ed9276": {"model_name": "FloatSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "FloatSliderView", "behavior": "drag-tap", "continuous_update": true, "description": "g0_in", "description_allow_html": false, "disabled": false, "layout": "IPY_MODEL_10f00365b86c4104b6f6d0683e23ab6b", "max": 1.0, "min": 0.01, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.1, "style": "IPY_MODEL_51e09513a23a4298b7dfb87301c2bad1", "tabbable": null, "tooltip": null, "value": 0.01}}, "4a6c67bb776e44f0b9afdb1f380e96d4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1abbeca554b44b3295843354e5bb821b": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "137f5d712f3d431cb88a127deb9e5435": {"model_name": "FloatSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "FloatSliderView", "behavior": "drag-tap", "continuous_update": true, "description": "kc0_in", "description_allow_html": false, "disabled": false, "layout": "IPY_MODEL_4a6c67bb776e44f0b9afdb1f380e96d4", "max": 1000.0, "min": 1.0, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.1, "style": "IPY_MODEL_1abbeca554b44b3295843354e5bb821b", "tabbable": null, "tooltip": null, "value": 70.0}}, "07b16bc8d0574a628dbb90dd3c2ad9ca": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "6edc93fb984e4d7bb034343e324a9567": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "609e593420fa44199c9f4bf54b149928": {"model_name": "FloatSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "FloatSliderView", "behavior": "drag-tap", "continuous_update": true, "description": "kc1_in", "description_allow_html": false, "disabled": false, "layout": "IPY_MODEL_07b16bc8d0574a628dbb90dd3c2ad9ca", "max": 1000.0, "min": 1.0, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.1, "style": "IPY_MODEL_6edc93fb984e4d7bb034343e324a9567", "tabbable": null, "tooltip": null, "value": 111.0}}, "71a2d21ba0b149fc80129b7fa465968d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "794a16eda9184cd9ad80b9f7aef48fab": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "39795defecf9451d8855130427d2b136": {"model_name": "FloatSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "FloatSliderView", "behavior": "drag-tap", "continuous_update": true, "description": "ks_in", "description_allow_html": false, "disabled": false, "layout": "IPY_MODEL_71a2d21ba0b149fc80129b7fa465968d", "max": 1000.0, "min": 1.0, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.1, "style": "IPY_MODEL_794a16eda9184cd9ad80b9f7aef48fab", "tabbable": null, "tooltip": null, "value": 308.0}}, "3c9750a0c6e54a429627477f7aa89a7d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "80d65b6a11d9491bb04df21f5529ead0": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "4f727269a9d44f76b9623ceee1251324": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "", "description": "Run Interact", "disabled": false, "icon": "", "layout": "IPY_MODEL_3c9750a0c6e54a429627477f7aa89a7d", "style": "IPY_MODEL_80d65b6a11d9491bb04df21f5529ead0", "tabbable": null, "tooltip": null}}, "e64d7744f00840729ae22eb66bcbb919": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8d02a59698334a3f8d0bd4cb16129a89": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_e64d7744f00840729ae22eb66bcbb919", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}}, "version_major": 2, "version_minor": 0}</script>
-    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script crossorigin="anonymous" data-jupyter-widgets-cdn="https://cdn.jsdelivr.net/npm/" src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'simulation-modules/T1-3E3-Activity-Cavity_QED_sensor';</script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Activity 2 – Two-photon (HOM) interference simulation" href="T1-3E3-Activity-Compuational_HOM.html" />
-    <link rel="prev" title="LAB – Quantum Sensing With Solid State Spins (Week 2)" href="../quNV-Jupyter/T3E3-LAB-Week2-Quantum-Sensing-with-Solid-State-Spins.html" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
-  </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
-  
-  
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
+<script async="async" src="../_static/sphinx-thebe.js"></script>
+<script>window.MathJax = {"tex": {"macros": {"ket": ["\\left|{#1}\\right\\rangle", 1], "bra": ["\\left\\langle{#1}\\right|", 1], "braket": ["\\left\\langle{#1}\\middle|{#2}\\right\\rangle", 2], "adagger": ["\\hat{a}^{\\dagger}"], "ahat": ["\\hat{a}"], "bdagger": ["\\hat{b}^{\\dagger}"], "bhat": ["\\hat{b}"], "cdagger": ["\\hat{c}^{\\dagger}"], "chat": ["\\hat{c}"], "ddagger": ["\\hat{d}^{\\dagger}"], "dhat": ["\\hat{d}"], "edagger": ["\\hat{e}^{\\dagger}"], "ehat": ["\\hat{e}"], "fdagger": ["\\hat{f}^{\\dagger}"], "fhat": ["\\hat{f}"], "gdagger": ["\\hat{g}^{\\dagger}"], "ghat": ["\\hat{g}"], "hdagger": ["\\hat{h}^{\\dagger}"], "hhat": ["\\hat{h}"], "gtwo": ["g^{(2)}"], "H": ["\\ket{H}"], "V": ["\\ket{V}"], "D": ["\\ket{D}"], "AD": ["\\ket{AD}"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+<script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="application/vnd.jupyter.widget-state+json">{"state": {"47ec1cb4e4384fa19c5b6f894da25b54": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7aaa8d2fe0264c1485afaa1fb1137538": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_72798c39b0054b82b40f7e26438179b1", "IPY_MODEL_1730d68363bd4931913e506420b224f2", "IPY_MODEL_dc1bc0b9b93c442995e7fcf957bb9557", "IPY_MODEL_b47de019450d47aa86a380a368ca5a13", "IPY_MODEL_3d98cdbeac064a6fb93a6a92fda8f8e8", "IPY_MODEL_2d10f0058b374340903bc1dd100f46c7"], "layout": "IPY_MODEL_47ec1cb4e4384fa19c5b6f894da25b54", "tabbable": null, "tooltip": null}}, "ea449d04099b497390d44251cf23fb47": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "fa1cf7a21eaa4f56a5e7a4419dec5e21": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "72798c39b0054b82b40f7e26438179b1": {"model_name": "FloatSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "FloatSliderView", "behavior": "drag-tap", "continuous_update": true, "description": "g0_in", "description_allow_html": false, "disabled": false, "layout": "IPY_MODEL_ea449d04099b497390d44251cf23fb47", "max": 1.0, "min": 0.01, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.1, "style": "IPY_MODEL_fa1cf7a21eaa4f56a5e7a4419dec5e21", "tabbable": null, "tooltip": null, "value": 0.01}}, "a2807261e47c43a0a4a283ec3c8e91f6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b04db6e55daa4c4a9088ab7cf617b730": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "1730d68363bd4931913e506420b224f2": {"model_name": "FloatSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "FloatSliderView", "behavior": "drag-tap", "continuous_update": true, "description": "kc0_in", "description_allow_html": false, "disabled": false, "layout": "IPY_MODEL_a2807261e47c43a0a4a283ec3c8e91f6", "max": 1000.0, "min": 1.0, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.1, "style": "IPY_MODEL_b04db6e55daa4c4a9088ab7cf617b730", "tabbable": null, "tooltip": null, "value": 70.0}}, "cbb2581bd7d5474fbce7b3b10436626a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "cbc92c3be0f544a4ba26d50127667b13": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "dc1bc0b9b93c442995e7fcf957bb9557": {"model_name": "FloatSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "FloatSliderView", "behavior": "drag-tap", "continuous_update": true, "description": "kc1_in", "description_allow_html": false, "disabled": false, "layout": "IPY_MODEL_cbb2581bd7d5474fbce7b3b10436626a", "max": 1000.0, "min": 1.0, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.1, "style": "IPY_MODEL_cbc92c3be0f544a4ba26d50127667b13", "tabbable": null, "tooltip": null, "value": 111.0}}, "e4a12f9ac6fc43bdba444ef44eb5cc51": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a04bbf1463e74f83a4f3fa4c7c3499fc": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "b47de019450d47aa86a380a368ca5a13": {"model_name": "FloatSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "FloatSliderView", "behavior": "drag-tap", "continuous_update": true, "description": "ks_in", "description_allow_html": false, "disabled": false, "layout": "IPY_MODEL_e4a12f9ac6fc43bdba444ef44eb5cc51", "max": 1000.0, "min": 1.0, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.1, "style": "IPY_MODEL_a04bbf1463e74f83a4f3fa4c7c3499fc", "tabbable": null, "tooltip": null, "value": 308.0}}, "6a5eed9115724ca4903debc0b97d877c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d2e1fe0fe99b46f6bd60d2a93abb6c73": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "3d98cdbeac064a6fb93a6a92fda8f8e8": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "", "description": "Run Interact", "disabled": false, "icon": "", "layout": "IPY_MODEL_6a5eed9115724ca4903debc0b97d877c", "style": "IPY_MODEL_d2e1fe0fe99b46f6bd60d2a93abb6c73", "tabbable": null, "tooltip": null}}, "6c6aecb12141406d80b6d8a0769c9d17": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2d10f0058b374340903bc1dd100f46c7": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_6c6aecb12141406d80b6d8a0769c9d17", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}}, "version_major": 2, "version_minor": 0}</script>
+<script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+<script crossorigin="anonymous" data-jupyter-widgets-cdn="https://cdn.jsdelivr.net/npm/" src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'simulation-modules/T1-3E3-Activity-Cavity_QED_sensor';</script>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="T1-3E3-Activity-Compuational_HOM.html" rel="next" title="Activity 2 – Two-photon (HOM) interference simulation"/>
+<link href="../quNV-Jupyter/T3E3-LAB-Week2-Quantum-Sensing-with-Solid-State-Spins.html" rel="prev" title="LAB – Quantum Sensing With Solid State Spins (Week 2)"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="en" name="docsearch:language"/>
+<link href="../_static/styles/chattutor.style.css" rel="stylesheet" type="text/css"/></head>
+<body data-bs-root-margin="0px 0px -60%" data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-default-mode="" data-offset="180">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div id="pst-scroll-pixel-helper"></div>
+<button class="btn rounded-pill" id="pst-back-to-top" type="button">
+<i class="fa-solid fa-arrow-up"></i>
     Back to top
   </button>
-
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
-<form class="bd-search d-flex align-items-center"
-      action="../search.html"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+<input class="sidebar-toggle" id="__primary" name="__primary" type="checkbox"/>
+<label class="overlay overlay-primary" for="__primary"></label>
+<input class="sidebar-toggle" id="__secondary" name="__secondary" type="checkbox"/>
+<label class="overlay overlay-secondary" for="__secondary"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form action="../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search this book..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
-  </div>
-  
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
-  
-  <div class="bd-container">
-    <div class="bd-container__inner bd-page-width">
-      
-      <div class="bd-sidebar-primary bd-sidebar">
-        
-
-  
-  <div class="sidebar-header-items sidebar-primary__section">
-    
-    
-    
-    
-  </div>
-  
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-  
-
+</div>
+<nav class="bd-header navbar navbar-expand-lg bd-navbar">
+</nav>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar">
+<div class="sidebar-header-items sidebar-primary__section">
+</div>
+<div class="sidebar-primary-items__start sidebar-primary__section">
+<div class="sidebar-primary-item">
 <a class="navbar-brand logo" href="../intro.html">
-  
-  
-  
-  
-    
-    
-      
-    
-    
-    <img src="../_static/logo-ibm.jpg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo-ibm.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
-  
-  
+<img alt="Logo image" class="logo__image only-light" src="../_static/logo-ibm.jpg"/>
+<script>document.write(`<img src="../_static/logo-ibm.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../intro.html">
+<div class="sidebar-primary-item"><nav aria-label="Main" class="bd-links" id="bd-docs-nav">
+<div class="bd-toc-item navbar-nav active">
+<ul class="nav bd-sidenav bd-sidenav__home-link">
+<li class="toctree-l1">
+<a class="reference internal" href="../intro.html">
                     6.2410 – Laboratory in Quantum Systems Engineering: Quantum Engineering Platforms
                 </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../BASICS-quantum-optics-basics.html">BASICS – Quantum Optics</a></li>
 </ul>
@@ -205,207 +138,96 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../FINAL-PROJECTS.html">Final Design Project</a></li>
 </ul>
-
-    </div>
+</div>
 </nav></div>
-    </div>
-  
-  
-  <div class="sidebar-primary-items__end sidebar-primary__section">
-  </div>
-  
-  <div id="rtd-footer-container"></div>
-
-
-      </div>
-      
-      <main id="main-content" class="bd-main">
-        
-        
-
+</div>
+<div class="sidebar-primary-items__end sidebar-primary__section">
+</div>
+<div id="rtd-footer-container"></div>
+</div>
+<main class="bd-main" id="main-content">
 <div class="sbt-scroll-pixel-helper"></div>
-
-          <div class="bd-content">
-            <div class="bd-article-container">
-              
-              <div class="bd-header-article">
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article">
 <div class="header-article-items header-article__inner">
-  
-    <div class="header-article-items__start">
-      
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <span class="fa-solid fa-bars"></span>
+<div class="header-article-items__start">
+<div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" for="__primary" title="Toggle primary sidebar">
+<span class="fa-solid fa-bars"></span>
 </label></div>
-      
-    </div>
-  
-  
-    <div class="header-article-items__end">
-      
-        <div class="header-article-item">
-
+</div>
+<div class="header-article-items__end">
+<div class="header-article-item">
 <div class="article-header-buttons">
-
-
-
-
-
 <div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://mybinder.org/v2/gh/dkeathley/S23-6.2410-lab/main?urlpath=tree/simulation-modules/T1-3E3-Activity-Cavity_QED_sensor.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
+<button aria-expanded="false" aria-label="Launch interactive content" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fas fa-rocket"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://mybinder.org/v2/gh/dkeathley/S23-6.2410-lab/main?urlpath=tree/simulation-modules/T1-3E3-Activity-Cavity_QED_sensor.ipynb" target="_blank" title="Launch onBinder">
 <span class="btn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
+<img src="../_static/images/logo_binder.svg"/>
+</span>
 <span class="btn__text-container">Binder</span>
 </a>
 </li>
-      
-      
-      
-      
-      <li><a href="https://colab.research.google.com/github/dkeathley/S23-6.2410-lab/blob/main/simulation-modules/T1-3E3-Activity-Cavity_QED_sensor.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onColab"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
+<li><a class="btn btn-sm dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://colab.research.google.com/github/dkeathley/S23-6.2410-lab/blob/main/simulation-modules/T1-3E3-Activity-Cavity_QED_sensor.ipynb" target="_blank" title="Launch onColab">
 <span class="btn__icon-container">
-  
-    <img src="../_static/images/logo_colab.png">
-  </span>
+<img src="../_static/images/logo_colab.png"/>
+</span>
 <span class="btn__text-container">Colab</span>
 </a>
 </li>
-      
-  </ul>
+</ul>
 </div>
-
-
-
-
-
-
 <div class="dropdown dropdown-source-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
-    <i class="fab fa-github"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://github.com/dkeathley/S23-6.2410-lab" target="_blank"
-   class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
+<button aria-expanded="false" aria-label="Source repositories" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fab fa-github"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-source-repository-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/dkeathley/S23-6.2410-lab" target="_blank" title="Source repository">
 <span class="btn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
+<i class="fab fa-github"></i>
+</span>
 <span class="btn__text-container">Repository</span>
 </a>
 </li>
-      
-      
-      
-      
-      <li><a href="https://github.com/dkeathley/S23-6.2410-lab/issues/new?title=Issue%20on%20page%20%2Fsimulation-modules/T1-3E3-Activity-Cavity_QED_sensor.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
+<li><a class="btn btn-sm btn-source-issues-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/dkeathley/S23-6.2410-lab/issues/new?title=Issue%20on%20page%20%2Fsimulation-modules/T1-3E3-Activity-Cavity_QED_sensor.html&amp;body=Your%20issue%20content%20here." target="_blank" title="Open an issue">
 <span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
+<i class="fas fa-lightbulb"></i>
+</span>
 <span class="btn__text-container">Open issue</span>
 </a>
 </li>
-      
-  </ul>
+</ul>
 </div>
-
-
-
-
-
-
 <div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
-    <i class="fas fa-download"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="../_sources/simulation-modules/T1-3E3-Activity-Cavity_QED_sensor.ipynb" target="_blank"
-   class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
+<button aria-expanded="false" aria-label="Download this page" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fas fa-download"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-download-source-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="../_sources/simulation-modules/T1-3E3-Activity-Cavity_QED_sensor.ipynb" target="_blank" title="Download source file">
 <span class="btn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
+<i class="fas fa-file"></i>
+</span>
 <span class="btn__text-container">.ipynb</span>
 </a>
 </li>
-      
-      
-      
-      
-      <li>
-<button onclick="window.print()"
-  class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
-  data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
+<li>
+<button class="btn btn-sm btn-download-pdf-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" onclick="window.print()" title="Print to PDF">
 <span class="btn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
+<i class="fas fa-file-pdf"></i>
+</span>
 <span class="btn__text-container">.pdf</span>
 </button>
 </li>
-      
-  </ul>
+</ul>
 </div>
-
-
-
-
-<button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
-  data-bs-placement="bottom" data-bs-toggle="tooltip"
->
-  
-
+<button class="btn btn-sm btn-fullscreen-button" data-bs-placement="bottom" data-bs-toggle="tooltip" onclick="toggleFullScreen()" title="Fullscreen mode">
 <span class="btn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
+<i class="fas fa-expand"></i>
+</span>
 </button>
-
-
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -415,7 +237,6 @@ document.write(`
   </button>
 `);
 </script>
-
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -423,29 +244,23 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" for="__secondary" title="Toggle secondary sidebar">
+<span class="fa-solid fa-list"></span>
 </label>
 </div></div>
-      
-    </div>
-  
 </div>
 </div>
-              
-              
-
-<div id="jb-print-docs-body" class="onlyprint">
-    <h1>Activity 1: Solid State Spis – Cavity QED Digital Twin</h1>
-    <!-- Table of contents -->
-    <div id="print-main-content">
-        <div id="jb-print-toc">
-            
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+</div>
+<div class="onlyprint" id="jb-print-docs-body">
+<h1>Activity 1: Solid State Spis – Cavity QED Digital Twin</h1>
+<!-- Table of contents -->
+<div id="print-main-content">
+<div id="jb-print-toc">
+<div>
+<h2> Contents </h2>
+</div>
+<nav aria-label="Page">
+<ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prelab">Prelab</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cavity-coupled-quantum-electrodynamic-qed-sensor">Cavity-coupled quantum electrodynamic (QED) sensor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regime">Linear Regime</a></li>
@@ -454,17 +269,13 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2">Exercise 2:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minimum-detectable-magnetic-field">Minimum detectable magnetic field</a></li>
 </ul>
-            </nav>
-        </div>
-    </div>
+</nav>
 </div>
-
-              
-                
+</div>
+</div>
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
-                  
-  <section class="tex2jax_ignore mathjax_ignore" id="activity-1-solid-state-spis-cavity-qed-digital-twin">
+<article class="bd-article" role="main">
+<section class="tex2jax_ignore mathjax_ignore" id="activity-1-solid-state-spis-cavity-qed-digital-twin">
 <h1>Activity 1: Solid State Spis – Cavity QED Digital Twin<a class="headerlink" href="#activity-1-solid-state-spis-cavity-qed-digital-twin" title="Permalink to this heading">#</a></h1>
 <section id="prelab">
 <h2>Prelab<a class="headerlink" href="#prelab" title="Permalink to this heading">#</a></h2>
@@ -488,7 +299,7 @@ document.write(`
 <p>One way to solve this problem is to use NV-cavity coupling, where we couple NV centers to another system (cavity in this case) and read the NV resonance frequency by via the cavity mode.</p>
 <p>In this module, you will learn how to simulate this system in QuTiP.</p>
 <figure class="align-default" id="cavity-qed-setup">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/nv-center-cavity-qed-setup.png"><img alt="Experimental Setup" class="bg-primary mb-1" src="../_images/nv-center-cavity-qed-setup.png" style="width: 800px;" /></a>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/nv-center-cavity-qed-setup.png"><img alt="Experimental Setup" class="bg-primary mb-1" src="../_images/nv-center-cavity-qed-setup.png" style="width: 800px;"/></a>
 <figcaption>
 <p><span class="caption-number">Fig. 66 </span><span class="caption-text">Experimental setup for studying quantum spins.</span><a class="headerlink" href="#cavity-qed-setup" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -499,7 +310,7 @@ document.write(`
 <p>Consider a case where we have a two-level system, such as a Nitrogen-Vacancy (NV) center, and an excitation, for example, a cavity mode. These two systems interact with each other when their frequencies are resonant. In the spectrum, we observe the phenomenon known as anti-crossing or avoided-crossing effect, which occurs when the energy levels of the two systems approach each other closely but do not actually cross.</p>
 <p>From <a class="reference external" href="https://en.wikipedia.org/wiki/Avoided_crossing">Wikipedia</a>: In quantum physics and quantum chemistry, an avoided crossing (sometimes called intended crossing, non-crossing or anticrossing) is the phenomenon where two eigenvalues of a Hermitian matrix representing a quantum observable and depending on N continuous real parameters cannot become equal in value (“cross”) except on a manifold of N-3 dimensions.</p>
 <figure class="align-default" id="avoided-crossing">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/adiabatic-states-linear-field.png"><img alt="avoided crossing" class="bg-primary mb-1" src="../_images/adiabatic-states-linear-field.png" style="width: 800px;" /></a>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/adiabatic-states-linear-field.png"><img alt="avoided crossing" class="bg-primary mb-1" src="../_images/adiabatic-states-linear-field.png" style="width: 800px;"/></a>
 <figcaption>
 <p><span class="caption-number">Fig. 67 </span><span class="caption-text">Avoided crossing of <span class="math notranslate nohighlight">\(\ket{\phi_1}\)</span> and <span class="math notranslate nohighlight">\(\ket{\phi_2}\)</span></span><a class="headerlink" href="#avoided-crossing" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -565,7 +376,7 @@ document.write(`
         <span class="n">quadratureOut</span><span class="p">[</span><span class="n">ii</span><span class="p">][</span><span class="n">jj</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="n">refOutput</span><span class="p">);</span>  <span class="c1"># Quadrature part of the cavity signal</span>
 
     <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">7.4</span><span class="p">,</span><span class="mf">7.4</span><span class="p">,</span><span class="n">num</span><span class="o">=</span><span class="n">ynum</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">0.8</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="n">num</span><span class="o">=</span><span class="n">xnum</span><span class="p">),)</span>
-    <span class="n">fig</span><span class="p">,</span> <span class="n">figAxes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">sharex</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">,</span> <span class="n">sharey</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">figAxes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">sharex</span><span class="o">=</span><span class="s1">'all'</span><span class="p">,</span> <span class="n">sharey</span><span class="o">=</span><span class="s1">'all'</span><span class="p">)</span>
     <span class="n">ax1</span> <span class="o">=</span> <span class="n">figAxes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">];</span>
     <span class="n">ax2</span> <span class="o">=</span> <span class="n">figAxes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">];</span>
     <span class="n">ax3</span> <span class="o">=</span> <span class="n">figAxes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">];</span>
@@ -573,27 +384,27 @@ document.write(`
 
 
     <span class="n">c</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">quadratureOut</span><span class="p">)</span>
-    <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Q&#39;</span><span class="p">)</span>
-    <span class="c1">#ax1.set_xlabel(&#39;fsc (MHz)&#39;)</span>
-    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;fdc (MHz)&#39;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">'Q'</span><span class="p">)</span>
+    <span class="c1">#ax1.set_xlabel('fsc (MHz)')</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'fdc (MHz)'</span><span class="p">)</span>
     <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">)</span>
 
     <span class="n">c</span> <span class="o">=</span> <span class="n">ax2</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">inphaseOut</span><span class="p">)</span>
-    <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;I&#39;</span><span class="p">)</span>
-    <span class="c1">#ax2.set_xlabel(&#39;fsc (MHz)&#39;)</span>
-    <span class="c1">#ax2.set_ylabel(&#39;fdc (MHz)&#39;)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">'I'</span><span class="p">)</span>
+    <span class="c1">#ax2.set_xlabel('fsc (MHz)')</span>
+    <span class="c1">#ax2.set_ylabel('fdc (MHz)')</span>
     <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">)</span>
 
     <span class="n">c</span> <span class="o">=</span> <span class="n">ax3</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="n">quadratureOut</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="nb">pow</span><span class="p">(</span><span class="n">inphaseOut</span><span class="p">,</span><span class="mi">2</span><span class="p">)))</span>
-    <span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;P&#39;</span><span class="p">)</span>
-    <span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;fsc (MHz)&#39;</span><span class="p">)</span>
-    <span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;fdc (MHz)&#39;</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">'P'</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">'fsc (MHz)'</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'fdc (MHz)'</span><span class="p">)</span>
     <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax3</span><span class="p">)</span>
 
     <span class="n">c</span> <span class="o">=</span> <span class="n">ax4</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">arctan</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="n">quadratureOut</span><span class="p">,</span><span class="n">inphaseOut</span><span class="p">)))</span>
-    <span class="n">ax4</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Phi&#39;</span><span class="p">)</span>
-    <span class="n">ax4</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;fsc (MHz)&#39;</span><span class="p">)</span>
-    <span class="c1">#ax4.set_ylabel(&#39;fdc (MHz)&#39;)</span>
+    <span class="n">ax4</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">'Phi'</span><span class="p">)</span>
+    <span class="n">ax4</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">'fsc (MHz)'</span><span class="p">)</span>
+    <span class="c1">#ax4.set_ylabel('fdc (MHz)')</span>
     <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax4</span><span class="p">)</span>
 
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -601,7 +412,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "73b2d5d5e5fd4bc88e8bcf747d237a34"}</script></div>
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "7aaa8d2fe0264c1485afaa1fb1137538"}</script></div>
 </div>
 </section>
 <section id="nonlinear-regime">
@@ -652,19 +463,19 @@ document.write(`
 
 <span class="c1"># Plotting</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">ref</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="n">wsc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="mf">1e6</span><span class="p">,</span> <span class="n">wsc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="mf">1e6</span><span class="p">,</span> <span class="n">wdc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="mf">1e6</span><span class="p">,</span> <span class="n">wdc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="mf">1e6</span><span class="p">],</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">ref</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="n">wsc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="mf">1e6</span><span class="p">,</span> <span class="n">wsc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="mf">1e6</span><span class="p">,</span> <span class="n">wdc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="mf">1e6</span><span class="p">,</span> <span class="n">wdc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="mf">1e6</span><span class="p">],</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">'auto'</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">'lower'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">clim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$(\omega_s-\omega_c)/(2\pi)$ (MHz)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$(\omega_d-\omega_c)/(2\pi)$ (MHz)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">'$(\omega_s-\omega_c)/(2\pi)$ (MHz)'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">'$(\omega_d-\omega_c)/(2\pi)$ (MHz)'</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/eb965bbe231346292a6e9cdc5e6a08325e3700ee9ff79c07ed6725d704055631.png" src="../_images/eb965bbe231346292a6e9cdc5e6a08325e3700ee9ff79c07ed6725d704055631.png" />
+<img alt="../_images/eb965bbe231346292a6e9cdc5e6a08325e3700ee9ff79c07ed6725d704055631.png" src="../_images/eb965bbe231346292a6e9cdc5e6a08325e3700ee9ff79c07ed6725d704055631.png"/>
 </div>
 </div>
 <div class="cell docutils container">
@@ -696,15 +507,15 @@ document.write(`
 
 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">final</span><span class="p">[</span><span class="mi">10000</span><span class="p">:</span><span class="mi">2000000</span><span class="o">-</span><span class="mi">10000</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Noise&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Sample&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Voltage (V)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Noise'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Sample'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Voltage (V)'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/5fb53858e7b035824cd1ed7c5e46df1b7536e649bf25f52212714d8fdeef24c7.png" src="../_images/5fb53858e7b035824cd1ed7c5e46df1b7536e649bf25f52212714d8fdeef24c7.png" />
+<img alt="../_images/764cad87907f4fc35dbfc1488ad2890680cc2db941860f58e9ebc7b622f678bd.png" src="../_images/764cad87907f4fc35dbfc1488ad2890680cc2db941860f58e9ebc7b622f678bd.png"/>
 </div>
 </div>
 <div class="cell docutils container">
@@ -712,8 +523,8 @@ document.write(`
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">periodogram</span>
 <span class="n">frequencies</span><span class="p">,</span> <span class="n">psd</span> <span class="o">=</span> <span class="n">periodogram</span><span class="p">(</span><span class="n">final</span><span class="p">,</span> <span class="n">fs</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">frequencies</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">psd</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s2">"log"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s2">"log"</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mf">1e-11</span><span class="p">,</span><span class="mf">1e-5</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mf">1e1</span><span class="p">,</span><span class="mf">1e5</span><span class="p">])</span>
 </pre></div>
@@ -723,7 +534,7 @@ document.write(`
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(10.0, 100000.0)
 </pre></div>
 </div>
-<img alt="../_images/fba9f7a4dcc803a1af7be32a3d4b4a04c91e717025b7c3d42b0956943ad772df.png" src="../_images/fba9f7a4dcc803a1af7be32a3d4b4a04c91e717025b7c3d42b0956943ad772df.png" />
+<img alt="../_images/e802612a70be7f5fd32841c52eafc20f1e0151ebbf4ea447bf4b9aa5321d23b2.png" src="../_images/e802612a70be7f5fd32841c52eafc20f1e0151ebbf4ea447bf4b9aa5321d23b2.png"/>
 </div>
 </div>
 </section>
@@ -733,7 +544,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Part 1</span>
-<span class="c1"># Let&#39;s consider a 1D plot first.</span>
+<span class="c1"># Let's consider a 1D plot first.</span>
 
 <span class="n">g0_in</span><span class="o">=</span><span class="mf">0.01</span>
 <span class="n">kc0_in</span> <span class="o">=</span> <span class="mi">70</span>
@@ -793,10 +604,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fc77cb77a10&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f2caa512d50&gt;]
 </pre></div>
 </div>
-<img alt="../_images/fc5b0414c99a403f5760795c3c53eb4c746b2b9b530fe8e1d672abb639ca1502.png" src="../_images/fc5b0414c99a403f5760795c3c53eb4c746b2b9b530fe8e1d672abb639ca1502.png" />
+<img alt="../_images/fc5b0414c99a403f5760795c3c53eb4c746b2b9b530fe8e1d672abb639ca1502.png" src="../_images/fc5b0414c99a403f5760795c3c53eb4c746b2b9b530fe8e1d672abb639ca1502.png"/>
 </div>
 </div>
 </section>
@@ -854,30 +665,29 @@ document.write(`
 
 <span class="n">fig</span><span class="p">,</span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">loglog</span><span class="p">(</span><span class="n">rho</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span><span class="n">eta</span><span class="o">*</span><span class="mi">1</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">3e-3</span><span class="o">*</span><span class="mf">3e-3</span><span class="o">*</span><span class="mf">0.5e-3</span><span class="p">),</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Photon shot noise limit&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">loglog</span><span class="p">(</span><span class="n">rho</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span><span class="n">eta</span><span class="o">*</span><span class="mi">1</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">3e-3</span><span class="o">*</span><span class="mf">3e-3</span><span class="o">*</span><span class="mf">0.5e-3</span><span class="p">),</span><span class="n">label</span><span class="o">=</span><span class="s1">'Photon shot noise limit'</span><span class="p">)</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">loglog</span><span class="p">(</span><span class="n">rho</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span><span class="n">eta_proj</span><span class="o">*</span><span class="mi">1</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">3e-3</span><span class="o">*</span><span class="mf">3e-3</span><span class="o">*</span><span class="mf">0.5e-3</span><span class="p">),</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Spin projection limit&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">loglog</span><span class="p">(</span><span class="n">rho</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span><span class="n">eta_proj</span><span class="o">*</span><span class="mi">1</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">3e-3</span><span class="o">*</span><span class="mf">3e-3</span><span class="o">*</span><span class="mf">0.5e-3</span><span class="p">),</span><span class="n">label</span><span class="o">=</span><span class="s1">'Spin projection limit'</span><span class="p">)</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">loglog</span><span class="p">(</span><span class="n">rho</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span><span class="n">etaB</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Cavity readout sensitivity&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">loglog</span><span class="p">(</span><span class="n">rho</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span><span class="n">etaB</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">'Cavity readout sensitivity'</span><span class="p">)</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;NV Density (cm^{-3})&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Sensitivity (T/\sqrt(Hz))&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">'NV Density (cm^{-3})'</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'Sensitivity (T/\sqrt(Hz))'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Sensitivity (T/\\sqrt(Hz))&#39;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, 'Sensitivity (T/\\sqrt(Hz))')
 </pre></div>
 </div>
-<img alt="../_images/5333994f1fb3c6daef40d39d1fa352dc4fb533bea42c6d53aba331bca87c6410.png" src="../_images/5333994f1fb3c6daef40d39d1fa352dc4fb533bea42c6d53aba331bca87c6410.png" />
+<img alt="../_images/5333994f1fb3c6daef40d39d1fa352dc4fb533bea42c6d53aba331bca87c6410.png" src="../_images/5333994f1fb3c6daef40d39d1fa352dc4fb533bea42c6d53aba331bca87c6410.png"/>
 </div>
 </div>
 </section>
 </section>
-
-    <script type="text/x-thebe-config">
+<script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
@@ -895,51 +705,35 @@ document.write(`
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
-
-                </article>
-              
-
-              
-              
-              
-              
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+<script>kernelName = 'python3'</script>
+</article>
+<footer class="prev-next-footer">
+<!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="../quNV-Jupyter/T3E3-LAB-Week2-Quantum-Sensing-with-Solid-State-Spins.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">LAB – Quantum Sensing With Solid State Spins (Week 2)</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="T1-3E3-Activity-Compuational_HOM.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Activity 2 – Two-photon (HOM) interference simulation</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
+<a class="left-prev" href="../quNV-Jupyter/T3E3-LAB-Week2-Quantum-Sensing-with-Solid-State-Spins.html" title="previous page">
+<i class="fa-solid fa-angle-left"></i>
+<div class="prev-next-info">
+<p class="prev-next-subtitle">previous</p>
+<p class="prev-next-title">LAB – Quantum Sensing With Solid State Spins (Week 2)</p>
 </div>
-                </footer>
-              
-            </div>
-            
-            
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
+</a>
+<a class="right-next" href="T1-3E3-Activity-Compuational_HOM.html" title="next page">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">next</p>
+<p class="prev-next-title">Activity 2 – Two-photon (HOM) interference simulation</p>
+</div>
+<i class="fa-solid fa-angle-right"></i>
+</a>
+</div>
+</footer>
+</div>
+<div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+<div class="sidebar-secondary-item">
+<div class="page-toc tocsection onthispage">
+<i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
+<nav class="bd-toc-nav page-toc">
+<ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prelab">Prelab</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cavity-coupled-quantum-electrodynamic-qed-sensor">Cavity-coupled quantum electrodynamic (QED) sensor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regime">Linear Regime</a></li>
@@ -948,56 +742,36 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2">Exercise 2:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minimum-detectable-magnetic-field">Minimum detectable magnetic field</a></li>
 </ul>
-  </nav></div>
-
+</nav></div>
 </div></div>
-              
-            
-          </div>
-          <footer class="bd-footer-content">
-            
+</div>
+<footer class="bd-footer-content">
 <div class="bd-footer-content__inner container">
-  
-  <div class="footer-item">
-    
+<div class="footer-item">
 <p class="component-author">
 By Dirk Englund, Donnie Keathley, Jane Heyes, Kevin Chen
 </p>
-
-  </div>
-  
-  <div class="footer-item">
-    
-  <p class="copyright">
+</div>
+<div class="footer-item">
+<p class="copyright">
     
       © Copyright 2022.
       <br/>
-    
-  </p>
-
-  </div>
-  
-  <div class="footer-item">
-    
-  </div>
-  
-  <div class="footer-item">
-    
-  </div>
-  
+</p>
 </div>
-          </footer>
-        
-
-      </main>
-    </div>
-  </div>
-  
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=927b94d3fcb96560df09"></script>
+<div class="footer-item">
+</div>
+<div class="footer-item">
+</div>
+</div>
+</footer>
+</main>
+</div>
+</div>
+<!-- Scripts loaded after <body> so the DOM is not blocked -->
+<script src="../_static/scripts/bootstrap.js?digest=927b94d3fcb96560df09"></script>
 <script src="../_static/scripts/pydata-sphinx-theme.js?digest=927b94d3fcb96560df09"></script>
-
-  <footer class="bd-footer">
-  </footer>
-  </body>
+<footer class="bd-footer">
+</footer>
+<script src="../_static/scripts/chattutor.config.js"></script><script src="../_static/scripts/chattutor.min.js"></script></body>
 </html>
