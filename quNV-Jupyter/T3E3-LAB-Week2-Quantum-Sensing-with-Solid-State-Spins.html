@@ -58,7 +58,7 @@ const thebe_selector_output = ".output, .cell_output"
 <link href="T3E3-LAB-Week1-Quantum-Sensing-with-Solid-State-Spins.html" rel="prev" title="LAB - Quantum Sensing with Solid State Spins (Week 1)"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="en" name="docsearch:language"/>
-<link href="../_static/styles/chattutor.style.css" rel="stylesheet" type="text/css"/><link href="../_static/styles/chattutor.style.css" rel="stylesheet" type="text/css"/></head>
+<link href="../_static/styles/chattutor.style.css" rel="stylesheet" type="text/css"/></head>
 <body data-bs-root-margin="0px 0px -60%" data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-default-mode="" data-offset="180">
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <div id="pst-scroll-pixel-helper"></div>
@@ -262,7 +262,7 @@ document.write(`
 </div>
 <nav aria-label="Page">
 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-3-achieve-strong-coupling-between-nv-centers-and-the-microwave-resonator">Aim 3: Achieve strong coupling between NV centers and the microwave resonator</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-3-day-3-achieve-strong-coupling-between-nv-centers-and-the-microwave-resonator">Aim 3 (Day 3): Achieve strong coupling between NV centers and the microwave resonator</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prelab">Prelab</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#laser-safety">Laser safety</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#simulation-with-hyperfine-transitions">Simulation with hyperfine transitions</a></li>
@@ -271,8 +271,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-exercise">Lab Exercise</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#i-interface-with-the-power-supply">i) Interface with the power supply</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-aligning-the-laser-to-excite-the-diamond">ii) Aligning the laser to excite the diamond</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-stack-everything-together">iii) Stack everything together!</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-realign-the-laser-to-excite-the-diamond">iv) Realign the laser to excite the diamond</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#v-optimize-the-position-of-the-loop-coupler">v) Optimize the position of the loop coupler</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vi-write-an-experimental-sequence-to-produce-a-2d-map-of-frequency-vs-magnetic-field">vi) Write an experimental sequence to produce a 2D map of frequency vs magnetic field</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vii-run-the-experimental-sequence-and-determine-if-you-have-achieved-strong-coupling">vii) Run the experimental sequence and determine if you have achieved strong coupling</a></li>
@@ -290,8 +288,8 @@ document.write(`
 <article class="bd-article" role="main">
 <section class="tex2jax_ignore mathjax_ignore" id="lab-quantum-sensing-with-solid-state-spins-week-2">
 <h1>LAB – Quantum Sensing With Solid State Spins (Week 2)<a class="headerlink" href="#lab-quantum-sensing-with-solid-state-spins-week-2" title="Permalink to this heading">#</a></h1>
-<section id="aim-3-achieve-strong-coupling-between-nv-centers-and-the-microwave-resonator">
-<h2>Aim 3: Achieve strong coupling between NV centers and the microwave resonator<a class="headerlink" href="#aim-3-achieve-strong-coupling-between-nv-centers-and-the-microwave-resonator" title="Permalink to this heading">#</a></h2>
+<section id="aim-3-day-3-achieve-strong-coupling-between-nv-centers-and-the-microwave-resonator">
+<h2>Aim 3 (Day 3): Achieve strong coupling between NV centers and the microwave resonator<a class="headerlink" href="#aim-3-day-3-achieve-strong-coupling-between-nv-centers-and-the-microwave-resonator" title="Permalink to this heading">#</a></h2>
 <section id="prelab">
 <h3>Prelab<a class="headerlink" href="#prelab" title="Permalink to this heading">#</a></h3>
 <section id="laser-safety">
@@ -357,65 +355,40 @@ nuclear spin preserving transitions (<span class="math notranslate nohighlight">
 </section>
 <section id="ii-aligning-the-laser-to-excite-the-diamond">
 <h4>ii) Aligning the laser to excite the diamond<a class="headerlink" href="#ii-aligning-the-laser-to-excite-the-diamond" title="Permalink to this heading">#</a></h4>
-<p>Inside the magnetic shield, there should be a 3D printed component with a thick microscope glass slide (square-ish).</p>
-<figure class="align-default" id="d-printed-mount-fig">
-<a class="reference internal image-reference" href="../_images/week2_3d_printed_mount.png"><img alt="../_images/week2_3d_printed_mount.png" src="../_images/week2_3d_printed_mount.png" style="width: 300px;"/></a>
+<p>As you saw in previous labs, the resonator is composed of two parts with a hole in the center, and a silicon carbide wafer in between the two parts.</p>
+<p>Using tweezers, drop the purple diamond with cut corners into hole in the center of the top half of the resonator. It should be just the right size to lie flat on the silicon carbide wafer at the bottom of the top half of the resonator hole. The diagram shown below is a reference to what you will be stacking:</p>
+<figure class="align-default" id="stack-fig">
+<a class="reference internal image-reference" href="../_images/week2_stack.png"><img alt="../_images/week2_stack.png" src="../_images/week2_stack.png" style="width: 700px;"/></a>
 <figcaption>
-<p><span class="caption-number">Fig. 60 </span><span class="caption-text">3D-printed mount for diamond samples.</span><a class="headerlink" href="#d-printed-mount-fig" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 60 </span><span class="caption-text">Diagram depicting a combined stack of the magnetic resonators and a diamond sample placed inside a magnetic shield.</span><a class="headerlink" href="#stack-fig" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Place a purple diamond on the glass slide close to the center. At this point, call your TA over to the station to turn on the laser (heavily attenuated such that the optical power is much less than 3 W). <em><strong>Please wear proper laser safety glasses now.</strong></em></p>
-<p>A 561<span class="math notranslate nohighlight">\(~\)</span>nm <a class="reference external" href="https://www.iridian.ca/learning_center/light-notes/basics-long-pass-filters/">optical longpass filter</a> will be placed to contain the 532<span class="math notranslate nohighlight">\(~\)</span>nm laser light. Your TA will then align the laser light to ensure it is incident on the diamond by turning the knobs of the 45-degree mirror at the bottom of the cage (see picture below).</p>
+<p>At this point, call your TA over to the station to turn on the laser (heavily attenuated such that the optical power is much less than 3 W). <em><strong>Please wear proper laser safety glasses now.</strong></em></p>
+<p>Your TA will then align the laser light to ensure it is incident on the diamond by turning the knobs of the 45-degree mirror at the bottom of the cage (see picture below).</p>
 <figure class="align-default" id="mirror-knobs-fig">
 <a class="reference internal image-reference" href="../_images/week2_mirror_knobs.png"><img alt="../_images/week2_mirror_knobs.png" src="../_images/week2_mirror_knobs.png" style="width: 300px;"/></a>
 <figcaption>
 <p><span class="caption-number">Fig. 61 </span><span class="caption-text">The 45-degree kinematic mirror mount with two knobs used for aligning the laser beam with respect to the diamond samples.</span><a class="headerlink" href="#mirror-knobs-fig" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Upon incidence, still with your laser safety glasses on, you should be able to see <em>fluorescence</em> emanating from the diamond. The fluorescence stems from the atomic transitions between the ground and excited states of the triplet manifold <span class="math notranslate nohighlight">\(^3 E \leftrightarrow ^3 A\)</span> in NV centers’ level structure. Recall from T3E3-TEXT that the <em>direct</em> emission from the exited state to the ground state corresponds to 637<span class="math notranslate nohighlight">\(~\)</span>nm. <u>If instead of a 561<span class="math notranslate nohighlight">\(~\)</span>nm longpass filter, we have a 638<span class="math notranslate nohighlight">\(~\)</span>nm optical longpass filter in place. Will you still be able to observe fluorescence? Why or why not?</u> You may find the photoluminescence spectrum below helpful.</p>
+<p>With the laser at minimum power, still with your laser safety glasses on, you should be able to see <em>fluorescence</em> emanating from the diamond. The fluorescence stems from the atomic transitions between the ground and excited states of the triplet manifold <span class="math notranslate nohighlight">\(^3 E \leftrightarrow ^3 A\)</span> in NV centers’ level structure. Recall from T3E3-TEXT that the <em>direct</em> emission from the exited state to the ground state corresponds to 637<span class="math notranslate nohighlight">\(~\)</span>nm. <u>If we placed a 638<span class="math notranslate nohighlight">\(~\)</span>nm optical longpass filter in front of the diamond, would you still be able to observe fluorescence? Why or why not?</u> You may find the photoluminescence spectrum below helpful.</p>
 <figure class="align-default" id="nv-spectrum-fig">
 <a class="reference internal image-reference" href="../_images/week2_nv_spectrum.png"><img alt="../_images/week2_nv_spectrum.png" src="../_images/week2_nv_spectrum.png" style="width: 500px;"/></a>
 <figcaption>
 <p><span class="caption-number">Fig. 62 </span><span class="caption-text">NV center’s photoluminescence spectrum. Figure adapted froom <a class="reference external" href="https://www.science.org/doi/10.1126/science.276.5321.2012">Gruber <em>et al.</em></a>.</span><a class="headerlink" href="#nv-spectrum-fig" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Now, the TA will turn off the laser and remove the longpass filter. Put the purple diamond back inside its original container. Again, with the pair of tweezers, grab the <em>non-purple</em> diamond and place it on the glass slide close to the center. Ask the TA to put the longpass filter back on top of the magnetic shield and turn on the laser again. <em><strong>Please make sure again you are wearing proper laser safety glasses.</strong></em> The TA will once again align the laser light to be incident on the diamond. <u>Are you able to observe any fluorescence? Explain why or why not? </u></p>
-<p>The TA will turn off the laser once again.</p>
-</section>
-<section id="iii-stack-everything-together">
-<h4>iii) Stack everything together!<a class="headerlink" href="#iii-stack-everything-together" title="Permalink to this heading">#</a></h4>
-<p>Recall from Aim 1, you had to stack the microwave resonators inside the magnetic shield. This time, you will stack even more things with your now seasoned tweezer skills.</p>
-<p>The diagram shown below is a reference to what you will be stacking:</p>
-<figure class="align-default" id="stack-fig">
-<a class="reference internal image-reference" href="../_images/week2_stack.png"><img alt="../_images/week2_stack.png" src="../_images/week2_stack.png" style="width: 700px;"/></a>
-<figcaption>
-<p><span class="caption-number">Fig. 63 </span><span class="caption-text">Diagram depicting a combined stack of the magnetic resonators and a diamond sample placed inside a magnetic shield.</span><a class="headerlink" href="#stack-fig" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>You need to first remove the 3D printed component with the glass slide, and replace it with a custom-machined PTFE (Teflon) disk on the <a class="reference external" href="https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=1535">retaining ring</a> inside the magnetic shield. Then, place one of the resonators (let’s call it resonator 1) on top of the PTFE disk, which should have a divet that (sort of) fits the microwave cavity. Next, put a thin microscope slide on top of resonator 1 in place of the “heat sink wafer”.</p>
-<p>Put the other resonator (call it resonator 2) on top of the thin glass slide. Try to <em>align resonator 2 to resonator 1</em> laterally.</p>
-<p>Finally, use the pair of tweezers and “drop” the diamond inside resonator 2 (central hole). You should have the diamond standing on its thin side that is 0.5<span class="math notranslate nohighlight">\(~\)</span>mm thick. A good trick is to use the tweezers to nudge it to a standing position after dropping it into resonator 2. See the picture below for reference. Let the TA know if you are having troubles.</p>
-<figure class="align-default" id="diamond-in-cavity-fig">
-<a class="reference internal image-reference" href="../_images/week2_diamond_in_cavity.png"><img alt="../_images/week2_diamond_in_cavity.png" src="../_images/week2_diamond_in_cavity.png" style="width: 300px;"/></a>
-<figcaption>
-<p><span class="caption-number">Fig. 64 </span><span class="caption-text">Example of a microwave cavity with diamond samples placed inside, each diamond standing vertically on its thin side (0.5<span class="math notranslate nohighlight">\(~\)</span>mm).</span><a class="headerlink" href="#diamond-in-cavity-fig" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="iv-realign-the-laser-to-excite-the-diamond">
-<h4>iv) Realign the laser to excite the diamond<a class="headerlink" href="#iv-realign-the-laser-to-excite-the-diamond" title="Permalink to this heading">#</a></h4>
-<p>We will now repeat step (ii). Let the TA know you are ready to turn on the laser and align the laser beam for you. <strong>Again, please wear your laser safety glasses now.</strong> This time, the attenuated laser beam is incident on the diamond <em>through the holes of the resonators</em>. You should still be able to “see” fluorescence from NV centers.</p>
 </section>
 <section id="v-optimize-the-position-of-the-loop-coupler">
 <h4>v) Optimize the position of the loop coupler<a class="headerlink" href="#v-optimize-the-position-of-the-loop-coupler" title="Permalink to this heading">#</a></h4>
-<p>In order to see avoided-crossing, you want to maximize the effective <em>cooperativity</em> of the spin-cavity system. The cooperativity <span class="math notranslate nohighlight">\(C\)</span> scales with <span class="math notranslate nohighlight">\(1/\kappa_c\)</span>. In other words, we must ensure the quality factor is as high as possible, <em>while keeping the loop coupler sufficiently close to be able to probe to cavity’s frequency response</em>. Do your best to optimize the position of the loop coupler by changing its <span class="math notranslate nohighlight">\(z\)</span> coordinate to achieve the highest quality factor, i.e. smallest cavity linewidth. Unfortunately, its <span class="math notranslate nohighlight">\(x,y\)</span> positions will be fixed by the iris, which is intended as both an additional magnetic shield and laser block. Hence, you may need to adjust the <em>tilt</em> slightly in addition to <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<p>In order to see avoided-crossing, you want to maximize the effective <em>cooperativity</em> of the spin-cavity system. The cooperativity <span class="math notranslate nohighlight">\(C\)</span> scales with <span class="math notranslate nohighlight">\(1/\kappa_c\)</span>. In other words, we must ensure the quality factor is as high as possible, <em>while keeping the loop coupler sufficiently close to be able to probe to cavity’s frequency response</em>. Do your best to optimize the position of the loop coupler by changing its height using the micrometer on the displacement mount to achieve the highest quality factor, i.e. smallest cavity linewidth. Unfortunately, its <span class="math notranslate nohighlight">\(x,y\)</span> positions will be fixed by the iris, which is intended as both an additional magnetic shield and laser block. We Can still somewhat tweak this by adjusting the rotation fo the loop antenna in the mounting thread, since the coaxial cable feeding the loop is not exactly straight.</p>
 <figure class="align-default" id="iris-adjust-fig">
 <a class="reference internal image-reference" href="../_images/week2_iris_adjust.png"><img alt="../_images/week2_iris_adjust.png" src="../_images/week2_iris_adjust.png" style="width: 600px;"/></a>
 <figcaption>
-<p><span class="caption-number">Fig. 65 </span><span class="caption-text">(left) Picture of an iris wrapping around the looper coupler. (right) Diagram showing the degrees of freedom for optimizing the loop coupler’s position.</span><a class="headerlink" href="#iris-adjust-fig" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 63 </span><span class="caption-text">(left) Picture of an iris wrapping around the looper coupler. (right) Diagram showing the degrees of freedom for optimizing the loop coupler’s position.</span><a class="headerlink" href="#iris-adjust-fig" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Be sure to avoid knocking over the resonator stack with the diamond that you have carefully constructed while optimizing the loop coupler’s position.</p>
+<p>The system is still quite sensitive, so avoid knocking it once you have achieved a good alignment. It may require further tweaking after the laser has been on for some time due to thermal heating.</p>
 </section>
 <section id="vi-write-an-experimental-sequence-to-produce-a-2d-map-of-frequency-vs-magnetic-field">
 <h4>vi) Write an experimental sequence to produce a 2D map of frequency vs magnetic field<a class="headerlink" href="#vi-write-an-experimental-sequence-to-produce-a-2d-map-of-frequency-vs-magnetic-field" title="Permalink to this heading">#</a></h4>
@@ -434,7 +407,7 @@ nuclear spin preserving transitions (<span class="math notranslate nohighlight">
 <section id="vii-run-the-experimental-sequence-and-determine-if-you-have-achieved-strong-coupling">
 <h4>vii) Run the experimental sequence and determine if you have achieved strong coupling<a class="headerlink" href="#vii-run-the-experimental-sequence-and-determine-if-you-have-achieved-strong-coupling" title="Permalink to this heading">#</a></h4>
 <p>Now, it is time to reproduce the avoided-crossing data you have seen in the demo and in your simulation results from Aim 2!</p>
-<p>Call your TA over when you have reached this step. <strong>Remeber to put on your laser safety glasses.</strong> After your TA closes the iris (if you have not done so already) and places the foam (an additional laser block) above it, the laser will be turned on to its max power. At this point, run the experimental sequence you have scripted.</p>
+<p>Call your TA over when you have reached this step. <strong>Remeber to put on your laser safety glasses.</strong> After your TA closes the iris (if you have not done so already) and places the safety shielding (an additional laser block) above it, the laser will be turned on to its max power. At this point, run the experimental sequence you have scripted.</p>
 <p>If the cavity quality factor is narrow enough, and the coupling strength between NV centers and the microwave resonator is sufficiently strong, the spin-cavity system should achieve strong coupling. In this case,
 your 2D map should contain “kinks” at each of the three hyperfine transitions.</p>
 <p>If you are having troubles, discuss with your teammates about ways to increase the coupling strength, SNR, …etc. Consult with your TA afterwards.</p>
@@ -500,7 +473,7 @@ your 2D map should contain “kinks” at each of the three hyperfine transition
   </div>
 <nav class="bd-toc-nav page-toc">
 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-3-achieve-strong-coupling-between-nv-centers-and-the-microwave-resonator">Aim 3: Achieve strong coupling between NV centers and the microwave resonator</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-3-day-3-achieve-strong-coupling-between-nv-centers-and-the-microwave-resonator">Aim 3 (Day 3): Achieve strong coupling between NV centers and the microwave resonator</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prelab">Prelab</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#laser-safety">Laser safety</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#simulation-with-hyperfine-transitions">Simulation with hyperfine transitions</a></li>
@@ -509,8 +482,6 @@ your 2D map should contain “kinks” at each of the three hyperfine transition
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-exercise">Lab Exercise</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#i-interface-with-the-power-supply">i) Interface with the power supply</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-aligning-the-laser-to-excite-the-diamond">ii) Aligning the laser to excite the diamond</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-stack-everything-together">iii) Stack everything together!</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-realign-the-laser-to-excite-the-diamond">iv) Realign the laser to excite the diamond</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#v-optimize-the-position-of-the-loop-coupler">v) Optimize the position of the loop coupler</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vi-write-an-experimental-sequence-to-produce-a-2d-map-of-frequency-vs-magnetic-field">vi) Write an experimental sequence to produce a 2D map of frequency vs magnetic field</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vii-run-the-experimental-sequence-and-determine-if-you-have-achieved-strong-coupling">vii) Run the experimental sequence and determine if you have achieved strong coupling</a></li>
@@ -551,5 +522,5 @@ By Dirk Englund, Donnie Keathley, Jane Heyes, Kevin Chen
 <script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 <footer class="bd-footer">
 </footer>
-<script src="../_static/scripts/chattutor.config.js"></script><script src="../_static/scripts/chattutor.min.js"></script><script src="../_static/scripts/chattutor.config.js"></script><script src="../_static/scripts/chattutor.min.js"></script></body>
+<script src="../_static/scripts/chattutor.config.js"></script><script src="../_static/scripts/chattutor.min.js"></script></body>
 </html>
