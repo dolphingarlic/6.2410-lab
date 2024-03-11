@@ -264,6 +264,7 @@ document.write(`
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#process-for-this-lab">Process for this lab</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aims-in-the-lab">Aims in the lab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-timeline">Lab Timeline</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mean-photon-number">Mean photon number</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bb84-s-security-is-based-on-the-no-cloning-theorem">BB84’s security is based on the no-cloning theorem</a></li>
 </ul>
@@ -312,6 +313,11 @@ document.write(`
 <li><p>Report your experimental SKR and how it compares to the model. Specifically, discuss the error rate you see versus what you expect.</p></li>
 <li><p>Propose steps for improving SKR. Consider how improving the loss of the system would affect the SKR.</p></li>
 </ol>
+</section>
+<section id="lab-timeline">
+<h2>Lab Timeline<a class="headerlink" href="#lab-timeline" title="Permalink to this heading">#</a></h2>
+<p>This lab is not explicitly broken up by day.  Typically, the first day of this lab is used to develop the needed codebase for your QKD measurements (adapting from what is provided).  This would include code for calibration, and the sending, receiving, and sifting of the secret key.</p>
+<p>The second day is then used to send and recieve data, learning about the importance of various settings in the bit error rate and efficiency of sending your secret key.  It would also be used to complete the remainder of the lab, including the exercises at the end on error correction and privacy amplification.</p>
 </section>
 <section id="mean-photon-number">
 <h2>Mean photon number<a class="headerlink" href="#mean-photon-number" title="Permalink to this heading">#</a></h2>
@@ -702,7 +708,8 @@ and then discard any bits that don’t meet both criteria.</p></li>
 <section id="information-reconciliation-error-correction">
 <h2>Information Reconciliation/Error Correction<a class="headerlink" href="#information-reconciliation-error-correction" title="Permalink to this heading">#</a></h2>
 <p>Alice and Bob want to make sure that any errors in their key are corrected, but they don’t want Eve to get too much information. The figure of merit for information reconiciliation/error correction is bit error rate (BER), the ratio of bits that are incorrect.</p>
-<p>A basic error correction scheme is provided below. It first estimates the raw BER by having Alice and Bob compare the first <code class="docutils literal notranslate"><span class="pre">length_reveal</span></code> bits over a classical channel. Eve gets all the information Alice and Bob share over the classical channel, so Alice and Bob throw away those bits as they are no longer secret.</p>
+<p>A basic error correction scheme is provided below. It is adapted from “Error Correction for Quantum Key Distribution” in Loepp and Wootters <a class="reference external" href="https://www.cambridge.org/core/books/abs/protecting-information/quantum-cryptography-revisited/8A88AA6C8C88E8A07E535FACEDE3C310">book available online with MIT Library sign in</a>.  You should read this section as well as the discussion on privacy amplification.  This is not meant to be a general introduction to error correction, but rather to provide an example approach so that you can see the basics of how error correction might be used.</p>
+<p>It first estimates the raw BER by having Alice and Bob compare the first <code class="docutils literal notranslate"><span class="pre">length_reveal</span></code> bits over a classical channel. Eve gets all the information Alice and Bob share over the classical channel, so Alice and Bob throw away those bits as they are no longer secret.</p>
 <p><strong>Write-up question:</strong> Where do the errors come from? How is that reflected in your model? Think about the limitations of the polarization optics and dark counts, as a place to start.</p>
 <p>Another form of error correction is available <a class="reference external" href="https://cascade-python.readthedocs.io/en/latest/protocol.html">here</a>, although we haven’t implemented it in the code.</p>
 <div class="cell docutils container">
@@ -870,8 +877,8 @@ and then discard any bits that don’t meet both criteria.</p></li>
 <section id="privacy-amplification">
 <h2>Privacy Amplification<a class="headerlink" href="#privacy-amplification" title="Permalink to this heading">#</a></h2>
 <p>In this set-up, Eve isn’t interacting with the optical set-up, so the only information she has is what Alice and Bob share via the classical channel.
-So, following pg 184 from the above book, we simply get rid of the last 3 bits of each of the 7-word chunks, and Eve will have no information about Alice and Bob’s shared key.</p>
-<p>There are a variety of ways to perform error correction and privacy amplification. The privacy amplification needs to take into account how the error correction is done: if Alice and Bob reveal more information (which would allow the error correction to work for a worse qBER) they need to eliminate more bits to thwart Eve.</p>
+So, following pg 184 from “Error Correction for Quantum Key Distribution” in Loepp and Wootters <a class="reference external" href="https://www.cambridge.org/core/books/abs/protecting-information/quantum-cryptography-revisited/8A88AA6C8C88E8A07E535FACEDE3C310">book available online with MIT Library sign in</a>, we simply get rid of the last 3 bits of each of the 7-word chunks, and Eve will have no information about Alice and Bob’s shared key.  As discussed in the reference, this removes the problematic bits about which information might have been inadvertently shared.</p>
+<p>There are a variety of ways to perform error correction and privacy amplification. The privacy amplification needs to take into account how the error correction is done: if Alice and Bob reveal more information (which would allow the error correction to work for a worse qBER) they need to eliminate more bits to thwart Eve.  Again, this exercise is only meant to introduce a basic approach.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Take the giant matrix of error-correct keys, and just skip the last few columns (or rows)</span>
@@ -940,6 +947,7 @@ So, following pg 184 from the above book, we simply get rid of the last 3 bits o
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#process-for-this-lab">Process for this lab</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aims-in-the-lab">Aims in the lab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-timeline">Lab Timeline</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mean-photon-number">Mean photon number</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bb84-s-security-is-based-on-the-no-cloning-theorem">BB84’s security is based on the no-cloning theorem</a></li>
 </ul>
